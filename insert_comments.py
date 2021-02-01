@@ -31,7 +31,7 @@ with io.open(r"C:\Users\Kiril\Downloads\archive\comments.csv", 'r', encoding="ut
         posts_authors[comment[1]]["comments"]["comment_" + comment[0]] = current_comment
 
 start_time = time.time()
-# print(len(posts_authors['1']['comments']))
+
 for key in posts_authors:
     post_id = "post_" + key
     author_id = "author_" + posts_authors[key]["author_id"]

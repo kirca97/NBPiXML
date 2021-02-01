@@ -1,10 +1,7 @@
 import csv
 import io
-import redis
 from rejson import Client, Path
 import time
-
-redis_client = redis.StrictRedis(host='localhost', port='6379', db=0)
 
 rj = Client(host='localhost', port=6379, decode_responses=True)
 
